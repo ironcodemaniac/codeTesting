@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        padding: 2em;
+        display: flex;
+        align-items: center;
+      }
+
+      .hamburger span,
+      .hamburger span::before,
+      .hamburger span::after {
+        display: block;
+        width: 2em;
+        height: 2px;
+        background: black;
+        position: relative;
+      }
+
+      .hamburger span::before,
+      .hamburger span::after {
+        content: "";
+        position: absolute;
+      }
+
+      .hamburger span::before {
+        top: 8px;
+      }
+
+      .hamburger span::after {
+        bottom: 8px;
+      }
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+      }
+
+      .nav-item {
+        margin-left: 3em;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: black;
+      }
+
+      .writingmode {
+        writing-mode: vertical-rl;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="hamburger"><span></span></div>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Shops</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
